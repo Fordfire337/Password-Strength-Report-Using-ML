@@ -18,8 +18,8 @@ public class AICHECK {
     public static void main(String[] args) throws Exception {
     	
     	
-    	
-        String password = "123";
+    	//enter desired password
+        String password = "1Kn0wTh!s!s@k";
         System.out.println("Password Strength Report:");
         System.out.println("------------------------");
 
@@ -82,6 +82,7 @@ public class AICHECK {
 
         // Check dictionary
         for (String word : dictionary) {
+            if (word.length() < 3) continue; // skip single/double letters
             if (pwLower.contains(word)) {
                 return "Weak (dictionary word: " + word + ")";
             }
