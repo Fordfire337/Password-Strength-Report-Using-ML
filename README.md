@@ -8,7 +8,7 @@ Makesure to pip install all required modules for Python
 Seq of Operation
 Python First:
               Preprocess_passwords.py (Should get x and y.npy (one is significaly larger))
-              train_lstm.py (train the module, this is where i stopped short due to lack of time and processing power)
+              train_lstm.py (train the module, this is where i stopped short due to lack of time and processing power, stop program and use model.save("password_lstm_model.keras") to export what is made so far.)
               password_lstm_service.py (This is the service)
 
 Java:
